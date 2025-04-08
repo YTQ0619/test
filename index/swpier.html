@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">   <title>Document</title>
+  <style>
+    .swiper {
+      width: 600px;
+      height: 300px;
+    }
+    .swiper-slide img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .swiper-slide{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://s1.aigei.com/prevfiles/668d71913059426e9d6e36838d1ffbc3.png?e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:dIFa7xwctLaCJ2JdJmJymdsYV9A=" alt=""></div>
+      <div class="swiper-slide"><img src="https://s1.aigei.com/src/img/png/80/8046960bbe1041d5a18da59831b1f5c9.png?imageMogr2/auto-orient/thumbnail/!282x158r/gravity/Center/crop/282x158/quality/85/%7CimageView2/2/w/282&e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:8JrzsY8JArYqu87En-ugENhd33I=" alt=""></div>
+      <div class="swiper-slide"><img src="https://s1.aigei.com/prevfiles/f55b068ccdee4ba3ad68226f90c23703.png?e=2051020800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:BwcTCIi9cMOB_NgCm5E1Jtap-sI=" alt=""></div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <script>
+      var swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        autpolay: false,
+        effect:'fade',
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+  </div>
+</body>
+</html>
